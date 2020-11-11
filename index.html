@@ -13,13 +13,7 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="/style/normalize.css">
     <!-- Load Babel -->
-    <!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <!-- Your custom script here -->
-    <script type="text/babel">
-      const getMessage = () => "Hello World";
-      document.getElementById('output').innerHTML = getMessage();
-    </script>
+    <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
     
     <title>MKT Bank</title>
   </head>
@@ -32,7 +26,7 @@
           <div class="container p-0">
             <!-- Logo -->
             <a class="nav-bar-config nav-brand" href="index.html">
-              <span id="logo-img"><svg data-v-df8bda34="" width="160" height="19" viewBox="0 0 160 19" fill="none" xmlns="http://www.w3.org/2000/svg" svg-inline="" role="presentation" focusable="false" tabindex="-1" class="" style="fill: rgb(255, 255, 255);"><path data-v-df8bda34="" d="M104.613 0a.372.372 0 00-.192.052.29.29 0 00-.128.147l-8.89 18.414a.27.27 0 00.245.387h1.823a.27.27 0 00.245-.157l8.059-16.675a.289.289 0 000-.23l-.395-.807-.447-.922a.353.353 0 00-.128-.146.348.348 0 00-.192-.063zm2.665 6.085a.27.27 0 01.49 0l6.055 12.527a.27.27 0 01-.245.388h-1.823a.268.268 0 01-.245-.157l-5.138-10.631a.289.289 0 010-.23l.554-1.142.352-.755zM87.184 9.186a.263.263 0 01-.042-.398c.426-.43.778-.932 1.034-1.477a5.09 5.09 0 00.469-2.126 5.169 5.169 0 00-1.546-3.666A5.29 5.29 0 0083.37 0h-7.633a.273.273 0 00-.277.272v7.165c0 .146.117.272.277.272h1.642a.28.28 0 00.277-.272V2.43a.28.28 0 01.277-.272h5.436c.843 0 1.62.335 2.175.89a2.99 2.99 0 01.906 2.137c0 .838-.341 1.592-.906 2.136a3.097 3.097 0 01-2.175.89h-1.034a.273.273 0 00-.277.273v1.613c0 .147.117.272.277.272h1.706a3.29 3.29 0 012.324.954c.597.586.97 1.393.97 2.283 0 .89-.373 1.707-.97 2.283a3.309 3.309 0 01-2.324.953h-6.097a.28.28 0 01-.278-.272v-5.342a.273.273 0 00-.277-.272h-1.641a.28.28 0 00-.277.272v7.5c0 .146.117.272.277.272h8.293a5.528 5.528 0 003.88-1.582 5.337 5.337 0 001.61-3.812c0-.964-.267-1.875-.725-2.66a5.493 5.493 0 00-1.62-1.76zM156.514 0a.267.267 0 00-.234.126l-9.253 14.182c-.149.23-.511.125-.511-.147V.272a.28.28 0 00-.278-.272h-1.641a.273.273 0 00-.277.272v18.456a.28.28 0 00.277.272h1.823a.293.293 0 00.234-.126L158.699.42a.271.271 0 00-.234-.419h-1.951zm-1.428 11.553a.282.282 0 01.469 0l4.402 7.028c.117.178-.021.409-.234.409h-1.94a.294.294 0 01-.235-.126l-1.737-2.765-1.727-2.755a.267.267 0 010-.283l.565-.87.437-.638zM120.869.094a.16.16 0 00-.096-.063.183.183 0 00-.107-.031.293.293 0 00-.202.084.264.264 0 00-.086.199v2.409c0 .063.022.136.075.178l14.678 16.057a.23.23 0 00.085.052c.032.01.064.021.096.021.064 0 .128-.02.171-.073a.234.234 0 00.064-.168v-2.514c0-.063-.021-.136-.075-.178L120.869.094zm12.482 9.018c0 .063.021.137.075.179l1.023 1.12.618.681c.171.189.48.063.48-.178V.272A.273.273 0 00135.27 0h-1.642a.28.28 0 00-.277.272v8.84zm-12.962-1.1c0-.25.309-.366.48-.177l.618.68 1.023 1.121a.293.293 0 01.075.178v8.903a.273.273 0 01-.277.273h-1.642a.28.28 0 01-.277-.273V8.013z" fill="#E0E0E0"></path><path data-v-df8bda34="" d="M37.873 0a.294.294 0 00-.234.126l-9.242 14.16a.272.272 0 01-.501-.146V.272A.273.273 0 0027.619 0h-1.642a.28.28 0 00-.277.272v18.435a.28.28 0 00.277.272H27.8a.294.294 0 00.235-.126L40.059.42C40.176.241 40.037 0 39.824 0h-1.95zm-1.428 11.542a.282.282 0 01.469 0l2.217 3.53 2.185 3.488c.118.178-.02.409-.234.409h-1.94a.294.294 0 01-.235-.126l-3.464-5.51a.27.27 0 010-.282l.565-.87.437-.639zM0 18.717c0 .147.117.273.277.273H1.92a.28.28 0 00.277-.273v-8.253a.236.236 0 00-.064-.168L1.098 9.039.49 8.306C.32 8.107 0 8.222 0 8.474v10.243zM19.475 0a.218.218 0 00-.117.031c-.032.021-.075.042-.096.074l-9.167 11.092a.274.274 0 01-.427 0L.501.105C.469.073.437.042.394.03a.252.252 0 00-.31.052.243.243 0 00-.084.19v2.555c0 .063.021.126.064.168l4.882 5.896 4.722 5.72c.107.136.32.136.427 0l4.722-5.72 4.882-5.896a.254.254 0 00.064-.168V.272a.284.284 0 00-.086-.199.316.316 0 00-.202-.073zm-1.908 10.464c0-.063.021-.126.064-.168l1.034-1.257.608-.733c.16-.199.49-.084.49.168v10.243a.28.28 0 01-.277.273h-1.642a.28.28 0 01-.277-.273v-8.253zM57.69 2.158c.149 0 .277-.116.277-.273V.272A.28.28 0 0057.69 0H45.495a.273.273 0 00-.277.272v1.613a.28.28 0 00.277.273H57.69zm-7.185 3.289c0-.147.117-.273.277-.273h1.642a.28.28 0 01.277.273v13.26a.28.28 0 01-.277.272h-1.642a.28.28 0 01-.277-.272V5.447z" fill="#6ECBD2"></path></svg></span>
+              <span id="logo-img"><svg data-v-df8bda34="" width="160" height="19" viewBox="0 0 160 19" fill="none" xmlns="http://www.w3.org/2000/svg" svg-inline="" role="presentation" focusable="false" tabindex="-1" class="text-righ" style="fill: rgb(255, 255, 255);"><path data-v-df8bda34="" d="M104.613 0a.372.372 0 00-.192.052.29.29 0 00-.128.147l-8.89 18.414a.27.27 0 00.245.387h1.823a.27.27 0 00.245-.157l8.059-16.675a.289.289 0 000-.23l-.395-.807-.447-.922a.353.353 0 00-.128-.146.348.348 0 00-.192-.063zm2.665 6.085a.27.27 0 01.49 0l6.055 12.527a.27.27 0 01-.245.388h-1.823a.268.268 0 01-.245-.157l-5.138-10.631a.289.289 0 010-.23l.554-1.142.352-.755zM87.184 9.186a.263.263 0 01-.042-.398c.426-.43.778-.932 1.034-1.477a5.09 5.09 0 00.469-2.126 5.169 5.169 0 00-1.546-3.666A5.29 5.29 0 0083.37 0h-7.633a.273.273 0 00-.277.272v7.165c0 .146.117.272.277.272h1.642a.28.28 0 00.277-.272V2.43a.28.28 0 01.277-.272h5.436c.843 0 1.62.335 2.175.89a2.99 2.99 0 01.906 2.137c0 .838-.341 1.592-.906 2.136a3.097 3.097 0 01-2.175.89h-1.034a.273.273 0 00-.277.273v1.613c0 .147.117.272.277.272h1.706a3.29 3.29 0 012.324.954c.597.586.97 1.393.97 2.283 0 .89-.373 1.707-.97 2.283a3.309 3.309 0 01-2.324.953h-6.097a.28.28 0 01-.278-.272v-5.342a.273.273 0 00-.277-.272h-1.641a.28.28 0 00-.277.272v7.5c0 .146.117.272.277.272h8.293a5.528 5.528 0 003.88-1.582 5.337 5.337 0 001.61-3.812c0-.964-.267-1.875-.725-2.66a5.493 5.493 0 00-1.62-1.76zM156.514 0a.267.267 0 00-.234.126l-9.253 14.182c-.149.23-.511.125-.511-.147V.272a.28.28 0 00-.278-.272h-1.641a.273.273 0 00-.277.272v18.456a.28.28 0 00.277.272h1.823a.293.293 0 00.234-.126L158.699.42a.271.271 0 00-.234-.419h-1.951zm-1.428 11.553a.282.282 0 01.469 0l4.402 7.028c.117.178-.021.409-.234.409h-1.94a.294.294 0 01-.235-.126l-1.737-2.765-1.727-2.755a.267.267 0 010-.283l.565-.87.437-.638zM120.869.094a.16.16 0 00-.096-.063.183.183 0 00-.107-.031.293.293 0 00-.202.084.264.264 0 00-.086.199v2.409c0 .063.022.136.075.178l14.678 16.057a.23.23 0 00.085.052c.032.01.064.021.096.021.064 0 .128-.02.171-.073a.234.234 0 00.064-.168v-2.514c0-.063-.021-.136-.075-.178L120.869.094zm12.482 9.018c0 .063.021.137.075.179l1.023 1.12.618.681c.171.189.48.063.48-.178V.272A.273.273 0 00135.27 0h-1.642a.28.28 0 00-.277.272v8.84zm-12.962-1.1c0-.25.309-.366.48-.177l.618.68 1.023 1.121a.293.293 0 01.075.178v8.903a.273.273 0 01-.277.273h-1.642a.28.28 0 01-.277-.273V8.013z" fill="#E0E0E0"></path><path data-v-df8bda34="" d="M37.873 0a.294.294 0 00-.234.126l-9.242 14.16a.272.272 0 01-.501-.146V.272A.273.273 0 0027.619 0h-1.642a.28.28 0 00-.277.272v18.435a.28.28 0 00.277.272H27.8a.294.294 0 00.235-.126L40.059.42C40.176.241 40.037 0 39.824 0h-1.95zm-1.428 11.542a.282.282 0 01.469 0l2.217 3.53 2.185 3.488c.118.178-.02.409-.234.409h-1.94a.294.294 0 01-.235-.126l-3.464-5.51a.27.27 0 010-.282l.565-.87.437-.639zM0 18.717c0 .147.117.273.277.273H1.92a.28.28 0 00.277-.273v-8.253a.236.236 0 00-.064-.168L1.098 9.039.49 8.306C.32 8.107 0 8.222 0 8.474v10.243zM19.475 0a.218.218 0 00-.117.031c-.032.021-.075.042-.096.074l-9.167 11.092a.274.274 0 01-.427 0L.501.105C.469.073.437.042.394.03a.252.252 0 00-.31.052.243.243 0 00-.084.19v2.555c0 .063.021.126.064.168l4.882 5.896 4.722 5.72c.107.136.32.136.427 0l4.722-5.72 4.882-5.896a.254.254 0 00.064-.168V.272a.284.284 0 00-.086-.199.316.316 0 00-.202-.073zm-1.908 10.464c0-.063.021-.126.064-.168l1.034-1.257.608-.733c.16-.199.49-.084.49.168v10.243a.28.28 0 01-.277.273h-1.642a.28.28 0 01-.277-.273v-8.253zM57.69 2.158c.149 0 .277-.116.277-.273V.272A.28.28 0 0057.69 0H45.495a.273.273 0 00-.277.272v1.613a.28.28 0 00.277.273H57.69zm-7.185 3.289c0-.147.117-.273.277-.273h1.642a.28.28 0 01.277.273v13.26a.28.28 0 01-.277.272h-1.642a.28.28 0 01-.277-.272V5.447z" fill="#6ECBD2"></path></svg></span>
             </a>
 
             <!-- Menu btn -->
@@ -48,15 +42,15 @@
               <a id="nav-tags" class="nav-link text-light text-uppercase " href="#sobre">sobre</a>
             </li>
             <li class="nav-item p-1">
-              <a id="nav-tags" class="nav-link text-light text-uppercase " href="#recebiveis">
+              <a id="nav-tags" class="nav-link text-light text-uppercase " href="#receb">
                 adiantamentos de recebiveis</a>
             </li>
             <li class="nav-item p-1">
-              <a id="nav-tags" class="nav-link text-light text-uppercase " href="#conta-pf">
+              <a id="nav-tags" class="nav-link text-light text-uppercase " href="#contapf">
                 conta pf</a>
             </li>
             <li class="nav-item p-1">
-              <a id="nav-tags" class="nav-link text-light text-uppercase " href="#conta-pj">
+              <a id="nav-tags" class="nav-link text-light text-uppercase " href="#contapj">
                 conta pj</a>
             </li>
             <li class="nav-item p-1">
@@ -70,18 +64,17 @@
     </header>
 
     <!--------------------------------------------- Sobre ------------------------------------>
-    <section id="sobre">
-      <div class="text-white content-parallax1">
+      <div id="sobre" class="text-white content-parallax1">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-8 col-xl-8 col-lg-8 col-sm-8 d-flex">
               <div id="content-top">
 
                 <!-- titulo -->
-                <h1 class="mkt-color">
+                <h1 class="mkt-color" data-anima="direita">
                   Sobre
                 </h1>
-                <h1 class="display-5 mb-4 ">
+                <h1 class="display-5 mb-4" data-anima="baixo">
                   Uma <span class="mkt-color">fintech</span> que integra serviços e produtos digitais.
                   Suas movimentações financeiras e de investimentos em um mesmo lugar.
                 </h1>
@@ -97,8 +90,8 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="d-flex">
-              <div id="content">
-                <h1 class=" text-center text-edit">
+              <div id="content" class="line-blue-background">
+                <h1 class="text-center text-edit" data-anima="fade">
                   O MKTBank é uma fintech criada no modelo de Marketplace. Pensando em você e na sua empresa, criamos uma conta digital para facilitar operações bancárias tradicionais com produtos e serviços digitais de crédito, investimentos, cambio e moedas empresariais.
                 </h1>
               </div> 
@@ -107,20 +100,16 @@
         </div>
       </div>
 
-      
-    </section>
-
-    <section>
       <div class="text-white content-parallax2">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-8 col-xl-8 col-lg-8 col-sm-8 d-flex">
               <div id="content-top">
 
-                <h1 class="display-5 mb-4 ">
-                  Nosso mundo é <span class="mkt-color">Digital</span> 
+                <h1 class="display-5 mb-4" data-anima="baixo">
+                  Nosso mundo é <span class="mkt-color" data-anima="direita">Digital</span> 
                 </h1>
-                <h1 class="display-5 mb-4 ">
+                <h1 class="display-5 mb-4" data-anima="baixo">
                   Contamos com parcerias nacionais e internacionais para o fornecimento de produtos digitais diferenciados e exclusivos.
                 </h1>
                 
@@ -145,22 +134,19 @@
           </div>
         </div>
       </div>
-    </section>
-  </section>
 
   <!------------------------------- Adiantamento de recebíveis --------------------------->
-  <section id="recebiveis">
-    <div class="text-white content-parallax3">
+    <div id="receb" class="text-white content-parallax3">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-8 col-xl-8 col-lg-8 col-sm-8 d-flex">
             <div id="content-top">
 
               <!-- titulo -->
-              <h1 class="mkt-color">
+              <h1 class="mkt-color" data-anima="direita">
                 Adiantamento de recebíveis
               </h1>
-              <h1 class="display-5 mb-4 ">
+              <h1 class="display-5 mb-4" data-anima="esquerda">
                 O dinheiro é seu! Nós só adiantamos para facilitar sua vida.
               </h1>
               
@@ -175,8 +161,8 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col text-center d-flex">
-            <div id="content">
-              <h1 class=" text-center text-edit">
+            <div id="content" class="line-gray-background" data-anima="fade">
+              <h1 class="text-center text-edit">
                 O MKTbank sempre pensando nas suas necessidades, oferece uma plataforma única e dinâmica para você realizar o adiantamento dos seus recebíveis.
               </h1>
 
@@ -186,30 +172,28 @@
               </h1>
               <br>
               <!-- button -->
-              <button class="btn btn-dark btn-lgmkt-color">Faça seu cadastro</button>
+              <button class="btn btn-dark btn-lgmkt-color" data-anima="fade">Faça seu cadastro</button>
             </div> 
           </div>
         </div>
       </div>
     </div>
-  </section>
 
   <!------------------------------------------------ Conta pf ------------------------------------------------------------>
-  <section id="conta-pf">
-    <div class="text-white content-parallax4">
+    <div id="contapf" class="text-white content-parallax4">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-8 col-xl-8 col-lg-8 col-sm-8 d-flex">
             <div id="content-top">
 
               <!-- titulo -->
-              <h1 class="mkt-color">
+              <h1 class="mkt-color" data-anima="cima">
                 Conta PF
               </h1>
-              <h1 class="display-5 mb-4 ">
+              <h1 class="display-5 mb-4" data-anima="baixo">
                 Praticidade, segurança e exclusividade. Baixe o app e abra sua conta!
               </h1>
-              <h1 class="h5 mkt-color">
+              <h1 class="h5 mkt-color" data-anima="fade">
                 Baixe nosso app
               </h1>
               <br>
@@ -257,24 +241,22 @@
         </div>
       </div>
     </div>
-  </section>
 
   <!------------------------------------------------ Conta pj ------------------------------------------------------------>
-  <section id="conta-pj">
-    <div class="text-white content-parallax5">
+    <div id="contapj" class="text-white content-parallax5">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-8 col-xl-8 col-lg-8 col-sm-8 d-flex">
             <div id="content-top">
 
               <!-- titulo -->
-              <h1 class="mkt-color">
+              <h1 class="mkt-color" data-anima="baixo">
                 Conta PJ
               </h1>
-              <h1 class="display-5 mb-4 ">
+              <h1 class="display-5 mb-4" data-anima="cima">
                 Uma conta digital com vantagens exclusivas para seu negócio!
               </h1>
-              <button class="btn btn-dark btn-lgmkt-color">Faça seu cadastro</button>
+              <button class="btn btn-dark btn-lgmkt-color" data-anima="fade">Faça seu cadastro</button>
             </div>  
           </div>
         </div>
@@ -314,9 +296,54 @@
         </div>
       </div>
     </div>
-  </section>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- ----------------------------------------------Footer-------------------------------------------------- -->
+    <div class="text-white bg-dark footer-text">
+      <div class="text-white">
+        <div class="container">
+          <div class="row">
+            <div class="footer-container  col-md-4 col-xl-4 col-lg-4 col-sm-8 d-flex">
+              <div>
+              </div> 
+            </div>
+            <div class="col-md-4 col-xl-4 col-lg-4 col-sm-8 d-flex">
+              <div id="center-footer">
+                <h1 class=" text-center">
+                  <a class="text-light" href="">atendimento@mktbank.com.br</a>
+                </h1>
+                <h1 class=" text-center">
+                    <a class="text-light" href="">Termos de uso e Política de privacidade</a>
+                  </h1>
+              </div> 
+            </div>
+            <div class="col-md-4 col-xl-4 col-lg-4 col-sm-8 d-flex">
+              <div id="right-footer">
+                  <h1 class="text-right">
+                    Sitael Participações S.A
+                  </h1>
+                  <h1 class="text-right">
+                    Sitael Participações S.A
+                  </h1>
+                  <br>
+                  <h1 class="text-right">
+                    Rua Henry Dunant nº 873 cj- 101
+                  </h1>
+                  <h1 class="text-right">
+                    CEP: 04709110
+                  </h1>
+                  <h1 class="text-right">
+                    Chácara Santo Antônio
+                  </h1>
+                  <h1 class="text-right">
+                    São Paulo/SP
+                  </h1>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Script -->
+    <script src="/scripts/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

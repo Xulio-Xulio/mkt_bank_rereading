@@ -37,6 +37,18 @@ header {
   font-size: 20px;
 }
 
+.line-blue-background {
+  background-image: url(/style/imgs/blue_Line.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.line-gray-background {
+  background-image: url(/style/imgs/gray_blue_Line.png);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
 /* -------------------parallax effect-------------------- */
 #content {
   background-color: black;
@@ -85,3 +97,52 @@ header {
   width: 160px;
   margin-right: 10px;
 }
+
+/* ---------------------------------------------------Footer--------------------------------------------------- */
+.footer-container {
+  margin-top: 20px;
+}
+
+.footer-text h1 {
+  font-size: 14px;
+}
+
+#center-footer {
+  margin-top: 35px;
+}
+
+#right-footer {
+  margin-top: 35px;
+}
+
+/* -------------------------------------------------Animações-------------------------------------------------- */
+[data-anima]{
+  opacity: 0%;
+  transition: 1s;
+}
+
+[data-anima="esquerda"]{
+  transform: translate3d(-50px,0,0);
+}
+
+[data-anima="direita"]{
+  transform: translate3d(50px,0,0);
+}
+
+[data-anima="cima"]{
+  transform: translate3d(0,50,0);
+}
+
+[data-anima="baixo"]{
+  transform: translate3d(0,-50px,0);
+}
+
+/* [data-anima="fade"]{
+  opacity: 100%;
+} */
+
+[data-anima].animacao{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
