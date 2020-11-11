@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------NavBar------------------------- */
+header {
+  height: 75px;
+  background-color: black;  
+}
+
+#logo-img {
+  width: 300px;
+}
+
+#nav-tags {
+  font-size: 16px;
+}
+
+/* #nav-tags:hover {
+  font-size: 19px;
+  text-decoration: aqua;
+} */
+
+.nav-button {
+  color: aqua;
+}
+
+/* Content */
+#content-top {
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
+.text-edit {
+  color: white;
+  font-size: 20px;
+}
+
+/* -------------------parallax effect-------------------- */
+#content {
+  background-color: black;
+  padding: 60px 80px;
+}
+
+.parallax-division {
+  background-color: black;
+}
+
+.content-parallax1 {
+  background-image: url(/style/imgs/sobre.jpg);
+}
+
+.content-parallax2 {
+  background-image: url(/style/imgs/martech.jpg);
+}
+
+.content-parallax3 {
+  background-image: url(/style/imgs/recebiveis.jpg);
+}
+
+.content-parallax4 {
+  background-image: url(/style/imgs/contapf.jpg);
+}
+
+.content-parallax5 {
+  background-image: url(/style/imgs/contapj.jpg);
+}
+
+.content-parallax1, .content-parallax2, .content-parallax3, .content-parallax4, .content-parallax5 {
+  position: relative;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* ----------------------------------------------------- */
+
+.mkt-color {
+  color: #6ECBD2;
+}
+
+.img-config {
+  width: 160px;
+  margin-right: 10px;
+}
