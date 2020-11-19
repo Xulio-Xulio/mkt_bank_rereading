@@ -17,11 +17,6 @@ header {
   font-size: 16px;
 }
 
-/* #nav-tags:hover {
-  font-size: 19px;
-  text-decoration: aqua;
-} */
-
 .nav-button {
   color: aqua;
 }
@@ -136,10 +131,6 @@ header {
 [data-anima="baixo"]{
   transform: translate3d(0,-50px,0);
 }
-
-/* [data-anima="fade"]{
-  opacity: 100%;
-} */
 
 [data-anima].animacao{
   opacity: 1;
