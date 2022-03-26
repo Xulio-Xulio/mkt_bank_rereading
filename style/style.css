@@ -6,7 +6,7 @@
 /* ---------------------NavBar------------------------- */
 header {
   height: 75px;
-  background-color: black;  
+  background-color: black; 
 }
 
 #logo-img {
@@ -33,13 +33,13 @@ header {
 }
 
 .line-blue-background {
-  background-image: url(/style/imgs/blue_Line.png);
+  background-image: url(./imgs/blue_Line.png);
   background-position: right;
   background-repeat: no-repeat;
 }
 
 .line-gray-background {
-  background-image: url(/style/imgs/gray_blue_Line.png);
+  background-image: url(./imgs/gray_blue_Line.png);
   background-position: left;
   background-repeat: no-repeat;
 }
@@ -55,23 +55,23 @@ header {
 }
 
 .content-parallax1 {
-  background-image: url(/style/imgs/sobre.jpg);
+  background-image: url(./imgs/sobre.jpg);
 }
 
 .content-parallax2 {
-  background-image: url(/style/imgs/martech.jpg);
+  background-image: url(./imgs/martech.jpg);
 }
 
 .content-parallax3 {
-  background-image: url(/style/imgs/recebiveis.jpg);
+  background-image: url(./imgs/recebiveis.jpg);
 }
 
 .content-parallax4 {
-  background-image: url(/style/imgs/contapf.jpg);
+  background-image: url(./imgs/contapf.jpg);
 }
 
 .content-parallax5 {
-  background-image: url(/style/imgs/contapj.jpg);
+  background-image: url(./imgs/contapj.jpg);
 }
 
 .content-parallax1, .content-parallax2, .content-parallax3, .content-parallax4, .content-parallax5 {
